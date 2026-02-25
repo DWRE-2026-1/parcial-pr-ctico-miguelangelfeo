@@ -1,14 +1,12 @@
-/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== FONDO ===== */
 body {
     min-height: 100vh;
-    background-color: #5b5b78; /* Color morado/gris */
+    background-color: #5b5b78;
     font-family: Arial, Helvetica, sans-serif;
 
     display: flex;
@@ -16,54 +14,38 @@ body {
     align-items: center;
 }
 
-/* ===== CONTENEDOR ===== */
 .pildoras-section {
     width: 80%;
     max-width: 900px;
     padding: 60px;
 }
 
-/* ===== GRID ===== */
 .pildoras-grid {
     list-style: none;
-
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    grid-template-rows: auto auto; /* 2 filas */
-
-    gap: 80px 100px; /* espacio vertical y horizontal */
-    justify-items: center; /* centra cada píldora dentro de su columna */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 80px 100px;
+    justify-items: center;
 }
 
-/* ===== PÍLDORAS ===== */
 .pildora {
     width: 120px;
     height: 200px;
-
     background-color: #e6cf93;
     border: 3px solid #d2bb80;
-
     border-radius: 60px;
-
     padding: 10px;
     margin: 0;
-
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* ===== POSICIONAMIENTO EXACTO ===== */
-
-/* Primera fila (automático: 1, 2, 3) */
-
-/* Segunda fila */
 .pildora:nth-child(4) {
-    grid-column: 1; /* debajo de la primera columna */
+    grid-column: 1;
     grid-row: 2;
 }
 
 .pildora:nth-child(5) {
-    grid-column: 2; /* debajo de la segunda columna */
+    grid-column: 2;
     grid-row: 2;
 }
-
-/* La columna 3 en la fila 2 queda vacía automáticamente */
