@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #5b5b78;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pildoras-section {
+    width: 80%;
+    max-width: 900px;
+    padding: 60px;
+}
+
+.pildoras-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 80px 100px;
+    justify-items: center;
+}
+
+.pildora {
+    width: 120px;
+    height: 200px;
+    background-color: #e6cf93;
+    border: 3px solid #d2bb80;
+    border-radius: 60px;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.pildora:nth-child(4) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.pildora:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
+}
